@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #EFF8E2;
+      color: #222;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #bbb;
+      font-size: 1em;
+    }
+
+    section {
+      background-color: #fff;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    section h2 {
+      color: #573280;
+      border-bottom: 2px solid #23022E;
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-bottom: 5px;
+      font-size: 1.4em;
+    }
+
+    section h2:hover{
+      opacity: 0.5;
+      border-bottom:none;
+    }
+
+    .about-img {
+      display: block;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px auto;
+      border: 3px solid #000;
+    }
+
+    section p {
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    ul li {
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 8px 0;
+      transition: background 0.3s;
+    }
+
+    ul li:hover {
+      background: #CECFC7;
+      transform:scale(1.2);
+    }
+
+    .project, .achievement {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 15px;
+      transition: background 0.3s;
+      text-align: left;
+    }
+
+    .project:hover, .achievement:hover {
+      background-color: #CECFC7;
+      transform:scale(1.25);
+    }
+
+    .project h3, .achievement h3 {
+      margin-top: 0;
+      color:#b334aa;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color:rgb(30, 58, 221); 
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 10px;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      section {
+        padding: 25px 15px;
+      }
+
+      section h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm <span style="color:#fff;">Saathwik Srungavarapu</span></h1>
+    <p>Welcome to My Portfolio!</p>
+  </header>
+
+  <section id="about">
+    <img src="https://picsum.photos/200" alt="Profile Picture" class="about-img">
+    <h2>About Me</h2>
+    <p>Hello! I'm learning web development at <a href="https://iiits.ac.in/" target=_main>IIIT Sri City</a>. I am in UG-1 ECE.<br>
+      This is my first portfolio website! <br>
+       I enjoy creating simple, clean, and creative web designs using HTML and CSS.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><b><u>Languages:</u></b> C, C++</li>
+      <li><b><u>Tools:</u></b> HTML, CSS, VS Code</li>
+      <li><b><u>Version Control:</u></b> Git, GitHub</li>
+      <li><b><u>Soft Skills:</u></b> Enthusiast, Good Listner, Adaptable, Quick Learner</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Coding</li>
+      <li>Solving Jigsaw Puzzles</li>
+      <li>Watching Movies</li>
+      <li>Gaming</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement">
+      <h3>Solved 80+ Questions</h3>
+      <p>Solved 80+ questions in LeetCode and 200+ in CodeChef.</p>
+    </div>
+    <div class="achievement">
+      <h3>Practising DSA</h3>
+      <p>Learning concepts of DSA on my own in C++ language with the help of <a href="https://www.youtube.com/" target=_main>YouTube</a> and websites like <a href="https://www.geeksforgeeks.org/" target=_main>GeeksForGeeks</a> and <a href="https://leetcode.com/" target=_main>LeetCode</a>.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Audrino</h3>
+      <p>Learning Audrino and its components.</p>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:youremail@example.com">saathwik.ss007@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/saathwikss007-pr</a></p>
+  </section>
+
+  <footer>
+    <p>Git & GitHub Bootcamp • GDG x IOTA </p>
+  </footer>
+</body>
+</html>
